@@ -11,3 +11,4 @@ class Settings:
     DataUser = os.getenv("DataUser")
     DataUserpPhone = os.getenv("DataUserpPhone")
     wep_app = os.getenv("wep_app")
+    CHECKRATE, COMMENT, RATE = range(3)
