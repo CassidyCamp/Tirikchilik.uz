@@ -1,5 +1,5 @@
 #bot.py
-
+import imghdr_backport
 from telegram.ext import Updater, CommandHandler, CallbackQueryHandler, MessageHandler, Filters, ConversationHandler
 
 from src.config import Settings
