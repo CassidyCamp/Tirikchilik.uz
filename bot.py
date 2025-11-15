@@ -9,6 +9,7 @@ from src.callbacks import start, help, sendCart, sendCooperation, sendInformatio
 
 def main() -> None:
     updater = Updater(Settings.TOKEN)
+    global dispatcher
     dispatcher = updater.dispatcher
     
     # Command Hendler
@@ -46,4 +47,8 @@ def main() -> None:
     updater.start_polling()
     updater.idle()
     
-main()
+try:
+    main()
+except:
+    dispatcher.add_handler(CommandHandler('Serverda xatolik qayta xabar yuboring'))
+    dispatcher.add_handler(MessageHandler('Serverda xatolik qayta xabar yuboring'))

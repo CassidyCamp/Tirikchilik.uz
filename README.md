@@ -173,3 +173,9 @@ Ushbu loyiha MIT litsenziyasi ostida tarqatiladi.
 ---
 
 **Tirikchilik.uz** - Sizning ishonchli telegram botingiz! 🤖
+
+
+# change lang: change_lan:nf
+# order: order:id
+# movie: movie:id
+# nfdlkng

@@ -175,8 +175,11 @@ def sendComment(update: Update, context: CallbackContext) -> None:
     elif update.message.text == "🏠 Bosh menyu":
         pass
     else:
+        text = 'Izoh uchun rahmat'
+        if context.user_data.get('lang') == 'en':
+            text = 'thank for your comment'
         update.message.reply_text(
-            text='Izoh uchun rahmat',
+            text=text,
             reply_markup=showMainMenu(),
         )
         return ConversationHandler.END
